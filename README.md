@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="./assets/svg/git-commands-logo.svg" width="300" height="300" alt="Logo">
+</p>
+
+---
 
 # 30 commandes Git utiles à connaître pour mieux gérer ton code
 
