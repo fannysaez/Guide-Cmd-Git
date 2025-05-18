@@ -48,9 +48,6 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 ```
 ---
 
-<p align="center">
-  <a href="GuideGit/demarrer-Git.md">Suivant</a>
-</p>
 
 
 
@@ -129,4 +126,9 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 
 [![Licence MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)](LICENSE)
 
+---
+
 </div>
+<p align="center">
+  <a href="GuideGit/demarrer-Git.md">Suivant</a>
+</p>
