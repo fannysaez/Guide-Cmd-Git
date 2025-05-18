@@ -125,5 +125,5 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 
 </div>
 <p align="center">
-  <a href="./GuideGitCmd/demarrer-Git.md">Suivant</a>
+  <a href="GuideGitCmd/demarrer-Git.md">Suivant</a>
 </p>
