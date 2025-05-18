@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2a2a2a; }
+    .command { font: bold 16px monospace; fill: #f34f29; }
+    .description { font: 14px sans-serif; fill: #666; }
+    .commit { fill: #f34f29; stroke: #c0392b; stroke-width: 2; }
+    .commit-new { fill: #28a745; stroke: #22863a; stroke-width: 2; }
+    .commit-cherry { fill: #ea4aaa; stroke: #b93484; stroke-width: 2; }
+    .branch-line { stroke: #2a2a2a; stroke-width: 2; }
+    .branch-line-new { stroke: #28a745; stroke-width: 2; stroke-dasharray: 5,5; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .branch-name { font: bold 14px sans-serif; fill: #2a2a2a; }
+    .user-info { font: italic 12px sans-serif; fill: #888; }
+  </style>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Titre -->
+  <text class="title" x="50" y="40">Pour aller plus loin avec Git</text>
+
+  <!-- Rebase Section -->
+  <g transform="translate(50,80)">
+    <text class="command" x="0" y="20">git rebase main</text>
+    
+    <!-- Before Rebase -->
+    <g transform="translate(0,50)">
+      <text class="description" x="0" y="0">Avant rebase:</text>
+      
+      <!-- Main branch -->
+      <path class="branch-line" d="M0,30 H400"/>
+      <text class="branch-name" x="20" y="25">main</text>
+      <circle class="commit" cx="100" cy="30" r="8"/>
+      <circle class="commit" cx="200" cy="30" r="8"/>
+      <circle class="commit" cx="300" cy="30" r="8"/>
+      
+      <!-- Feature branch -->
+      <path class="branch-line" d="M100,30 C120,30 120,80 140,80 H400"/>
+      <text class="branch-name" x="20" y="85">feature</text>
+      <circle class="commit" cx="200" cy="80" r="8"/>
+      <circle class="commit" cx="300" cy="80" r="8"/>
+    </g>
+    
+    <!-- After Rebase -->
+    <g transform="translate(0,180)">
+      <text class="description" x="0" y="0">Après rebase:</text>
+      
+      <!-- Main branch -->
+      <path class="branch-line" d="M0,30 H400"/>
+      <text class="branch-name" x="20" y="25">main</text>
+      <circle class="commit" cx="100" cy="30" r="8"/>
+      <circle class="commit" cx="200" cy="30" r="8"/>
+      <circle class="commit" cx="300" cy="30" r="8"/>
+      
+      <!-- Rebased feature branch -->
+      <path class="branch-line-new" d="M300,30 H400"/>
+      <text class="branch-name" x="320" y="25">feature</text>
+      <circle class="commit-new" cx="350" cy="30" r="8"/>
+      <circle class="commit-new" cx="400" cy="30" r="8"/>
+    </g>
+  </g>
+
+  <!-- Cherry-pick Section -->
+  <g transform="translate(500,80)">
+    <text class="command" x="0" y="20">git cherry-pick [commit]</text>
+    
+    <!-- Source branch -->
+    <g transform="translate(0,50)">
+      <text class="description" x="0" y="0">Sélection d'un commit spécifique:</text>
+      
+      <!-- Branch with commit to pick -->
+      <path class="branch-line" d="M0,30 H350"/>
+      <text class="branch-name" x="20" y="25">source</text>
+      <circle class="commit" cx="100" cy="30" r="8"/>
+      <circle class="commit-cherry" cx="200" cy="30" r="8"/>
+      <circle class="commit" cx="300" cy="30" r="8"/>
+      
+      <!-- Target branch -->
+      <path class="branch-line" d="M0,80 H350"/>
+      <text class="branch-name" x="20" y="75">target</text>
+      <circle class="commit" cx="100" cy="80" r="8"/>
+      <circle class="commit" cx="300" cy="80" r="8"/>
+      
+      <!-- Cherry-pick arrow -->
+      <path class="arrow" d="M200,30 C220,30 220,80 240,80"/>
+      <circle class="commit-cherry" cx="250" cy="80" r="8"/>
+    </g>
+  </g>
+
+  <!-- Additional Explanation -->
+  <g transform="translate(50,400)">
+    <rect width="800" height="60" rx="5" fill="#f6f8fa" stroke="#ddd"/>
+    <text class="description" x="20" y="25">🔄 rebase: Réorganise l'historique pour le rendre plus linéaire</text>
+    <text class="description" x="20" y="45">🍒 cherry-pick: Sélectionne et applique un commit spécifique</text>
+  </g>
+
+  <!-- User Info -->
+  <text class="user-info" x="50" y="485">Created by @fannysaez - 2025-05-18 06:12:07 UTC</text>
+</svg>
