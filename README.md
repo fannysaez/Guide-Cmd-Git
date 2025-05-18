@@ -55,7 +55,7 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 
 
 
-## 3. Travailler avec des branches
+<!-- ## 3. Travailler avec des branches
 
 | Commande | Description |
 |----------|-------------|
@@ -99,7 +99,7 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 | Commande | Description |
 |----------|-------------|
 | `git rebase branche` | Rejoue les commits d'une branche sur une autre, pour un historique plus propre. |
-| `git cherry-pick [commit]` | Applique un commit précis sur ta branche actuelle (sans tout fusionner). |
+| `git cherry-pick [commit]` | Applique un commit précis sur ta branche actuelle (sans tout fusionner). | -->
 
 ---
 
