@@ -7,6 +7,8 @@
 | `git config --global user.name "TonNom"` | Définit ton nom d'auteur pour tous les projets. |
 | `git config --global user.email "email@example.com"` | Idem pour l'adresse email associée aux commits. |
 
+---
+
 <div align="center">
   <img src="../assets/svg/getting-started.svg" alt="Démarrer avec Git - Commandes de base" width="800">
 </div>
