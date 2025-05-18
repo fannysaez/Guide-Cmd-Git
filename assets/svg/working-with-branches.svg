@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2a2a2a; }
+    .command { font: bold 16px monospace; fill: #f34f29; }
+    .description { font: 14px sans-serif; fill: #666; }
+    .branch-line { stroke: #2a2a2a; stroke-width: 3; fill: none; }
+    .branch-name { font: bold 14px sans-serif; fill: #2a2a2a; }
+    .commit-circle { fill: #f34f29; stroke: #c0392b; stroke-width: 2; }
+    .commit-text { font: 12px monospace; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .highlight { fill: #ffeb3b; opacity: 0.3; }
+    .command-box { fill: #f0f0f0; stroke: #ddd; stroke-width: 1; rx: 5; }
+    .user-info { font: italic 12px sans-serif; fill: #888; }
+  </style>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Titre -->
+  <text class="title" x="50" y="40">Travailler avec des branches</text>
+
+  <!-- Branch visualization -->
+  <g transform="translate(50,100)">
+    <!-- Main branch -->
+    <path class="branch-line" d="M0,50 H800"/>
+    <text class="branch-name" x="20" y="40">main</text>
+    
+    <!-- Feature branch -->
+    <path class="branch-line" d="M200,50 C250,50 250,150 300,150 H500"/>
+    <text class="branch-name" x="350" y="140">feature</text>
+    
+    <!-- Merge visualization -->
+    <path class="branch-line" d="M500,150 C550,150 550,50 600,50"/>
+    
+    <!-- Commits -->
+    <circle class="commit-circle" cx="100" cy="50" r="10"/>
+    <circle class="commit-circle" cx="200" cy="50" r="10"/>
+    <circle class="commit-circle" cx="300" cy="150" r="10"/>
+    <circle class="commit-circle" cx="400" cy="150" r="10"/>
+    <circle class="commit-circle" cx="500" cy="150" r="10"/>
+    <circle class="commit-circle" cx="600" cy="50" r="10"/>
+    <circle class="commit-circle" cx="700" cy="50" r="10"/>
+    
+    <!-- Command annotations -->
+    <g transform="translate(200,80)">
+      <rect class="command-box" width="160" height="25"/>
+      <text class="command" x="10" y="18">git branch feature</text>
+    </g>
+    
+    <g transform="translate(300,180)">
+      <rect class="command-box" width="180" height="25"/>
+      <text class="command" x="10" y="18">git checkout feature</text>
+    </g>
+    
+    <g transform="translate(550,80)">
+      <rect class="command-box" width="160" height="25"/>
+      <text class="command" x="10" y="18">git merge feature</text>
+    </g>
+  </g>
+
+  <!-- Commands explanation -->
+  <g transform="translate(50,350)">
+    <!-- Command boxes -->
+    <g transform="translate(0,0)">
+      <rect class="command-box" width="250" height="60"/>
+      <text class="command" x="10" y="25">git branch</text>
+      <text class="description" x="10" y="45">Liste des branches</text>
+    </g>
+    
+    <g transform="translate(300,0)">
+      <rect class="command-box" width="250" height="60"/>
+      <text class="command" x="10" y="25">git checkout -b feature</text>
+      <text class="description" x="10" y="45">Crée et bascule sur la branche</text>
+    </g>
+    
+    <g transform="translate(600,0)">
+      <rect class="command-box" width="250" height="60"/>
+      <text class="command" x="10" y="25">git branch -d feature</text>
+      <text class="description" x="10" y="45">Supprime la branche</text>
+    </g>
+  </g>
+
+  <!-- Branch lifecycle visualization -->
+  <g transform="translate(50,450)">
+    <text class="description" x="0" y="0">Cycle de vie d'une branche :</text>
+    <path class="arrow" d="M0,30 H200"/>
+    <text class="description" x="0" y="60">1. Création</text>
+    <text class="description" x="150" y="60">2. Développement</text>
+    <text class="description" x="300" y="60">3. Merge</text>
+    <text class="description" x="450" y="60">4. Suppression</text>
+  </g>
+
+  <!-- User Info -->
+  <text class="user-info" x="50" y="580">Created by @fannysaez - 2025-05-18 05:40:36 UTC</text>
+</svg>
