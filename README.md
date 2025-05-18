@@ -46,11 +46,6 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 │       ├── 📄 commit-icon.svg
 │       └── 📄 merge-icon.svg
 ```
----
-
-
-
-
 
 <!-- ## 3. Travailler avec des branches
 
