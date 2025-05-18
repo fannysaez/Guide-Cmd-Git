@@ -23,28 +23,36 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 - [7. Pour aller plus loin](#7-pour-aller-plus-loin)
 
 ---
+
 ### 🗂️ Structure des 30 commandes Git
 
 ```bash
-📂 30 Commands Git
-│── 📄 README.md         --> Page d'accueil avec introduction et table des matières
-│── 📄 getting-started.md   --> Démarrer avec Git (Section 1)
-│── 📄 tracking-changes.md  --> Suivre les changements (Section 2)
-│── 📄 working-with-branches.md  --> Travailler avec des branches (Section 3)
-│── 📄 remote-repositories.md    --> Travailler avec un dépôt distant (Section 4)
-│── 📄 history-and-changes.md    --> Consulter l'historique et les changements (Section 5)
-│── 📄 undo-and-restore.md       --> Annuler, restaurer ou mettre de côté (Section 6)
-│── 📄 advanced-commands.md      --> Pour aller plus loin (Section 7)
-│── 📄 git-aliases.md           --> Astuces et alias Git
-│── 📂 assets                   --> Dossier pour les ressources
-│   ├── 📄 git-commands-logo.svg    --> Logo principal
-│   ├── 🖼️ git-workflow.png         --> Schéma du workflow Git
-│   ├── 🖼️ branch-example.png       --> Illustration du branching
-│   ├── 🖼️ merge-vs-rebase.png      --> Comparaison merge/rebase
-│   └── 📂 svg                      --> Sous-dossier pour les icônes SVG
-│       ├── 📄 branch-icon.svg
-│       ├── 📄 commit-icon.svg
-│       └── 📄 merge-icon.svg
+📂 Guide-Cmd-Git
+│── 📄 README.md            --> Page d'accueil avec introduction et table des matières
+│── 📂 Cmd-Git              --> Dossier pour les commandes Git
+│   ├── 📄 demarrer-Git.md       --> Démarrer avec Git (Section 1)
+│   ├── 📄 modifs-necessaires.md --> Suivre les changements (Section 2)
+│   ├── 📄 branches.md           --> Travailler avec des branches (Section 3)
+│   ├── 📄 depot-distant.md      --> Travailler avec un dépôt distant (Section 4)
+│   ├── 📄 historique.md         --> Consulter l'historique et les changements (Section 5)
+│   ├── 📄 changements.md        --> Annuler, restaurer ou mettre de côté (Section 6)
+│   ├── 📄 plus-loin.md          --> Pour aller plus loin (Section 7)
+│── 📂 assets               --> Dossier pour les ressources
+│   ├── 🖼️ branch-example.png    --> Illustration du branching
+│   ├── 🖼️ git-workflow.png      --> Schéma du workflow Git
+│   ├── 🖼️ merge-vs-rebase.png   --> Comparaison merge/rebase
+│   └── 📂 svg                 --> Sous-dossier pour les icônes SVG
+│       ├── 📄 advanced-git.svg
+│       ├── 📄 getting-started.svg
+│       ├── 📄 git-commands-logo.svg
+│       ├── 📄 git-operations.svg
+│       ├── 📄 gitcommands-logo.svg
+│       ├── 📄 history-and-changes.svg
+│       ├── 📄 Licence-MIT-blue.svg
+│       ├── 📄 remote-repository.svg
+│       ├── 📄 reset-and-stash.svg
+│       ├── 📄 tracking-changes.svg
+│       └── 📄 working-with-branches.svg
 ```
 
 ---
