@@ -1,0 +1,10 @@
+[Un diagramme comparant merge et rebase]
+Merge:
+main    ----o----o----o----o
+          \               /
+feature    o----o----o----
+
+Rebase:
+main    ----o----o----o----o
+                           \
+feature                    o'---o'---o'

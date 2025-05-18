@@ -1,0 +1,6 @@
+[Un diagramme illustrant le branching Git]
+main ----o----o----o----o
+          \
+feature    o----o----o
+                     \
+main ----o----o----o----o----o

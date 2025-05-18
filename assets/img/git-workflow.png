@@ -1,0 +1,8 @@
+[Un diagramme montrant le workflow Git basique]
+- Working Directory (fichiers modifiés)
+↓ (git add)
+- Staging Area (fichiers indexés)
+↓ (git commit)
+- Local Repository (commits)
+↓ (git push)
+- Remote Repository (GitHub/GitLab)
