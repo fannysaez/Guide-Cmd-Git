@@ -18,5 +18,5 @@
 
 <p align="center">
 <a href="./demarrer-Git.md">Précédent</a> 
-| <a href="./">Suivant</a>
+| <a href="./branches.md">Suivant</a>
 </p>
