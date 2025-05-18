@@ -23,25 +23,37 @@ Voici une sélection de 30 commandes que je trouve pratiques :
 - [7. Pour aller plus loin](#7-pour-aller-plus-loin)
 
 ---
+### 🗂️ Structure des 30 commandes Git
 
-## 1. Démarrer avec Git
+```bash
+📂 30 Commands Git
+│── 📄 README.md         --> Page d'accueil avec introduction et table des matières
+│── 📄 getting-started.md   --> Démarrer avec Git (Section 1)
+│── 📄 tracking-changes.md  --> Suivre les changements (Section 2)
+│── 📄 working-with-branches.md  --> Travailler avec des branches (Section 3)
+│── 📄 remote-repositories.md    --> Travailler avec un dépôt distant (Section 4)
+│── 📄 history-and-changes.md    --> Consulter l'historique et les changements (Section 5)
+│── 📄 undo-and-restore.md       --> Annuler, restaurer ou mettre de côté (Section 6)
+│── 📄 advanced-commands.md      --> Pour aller plus loin (Section 7)
+│── 📄 git-aliases.md           --> Astuces et alias Git
+│── 📂 assets                   --> Dossier pour les ressources
+│   ├── 📄 git-commands-logo.svg    --> Logo principal
+│   ├── 🖼️ git-workflow.png         --> Schéma du workflow Git
+│   ├── 🖼️ branch-example.png       --> Illustration du branching
+│   ├── 🖼️ merge-vs-rebase.png      --> Comparaison merge/rebase
+│   └── 📂 svg                      --> Sous-dossier pour les icônes SVG
+│       ├── 📄 branch-icon.svg
+│       ├── 📄 commit-icon.svg
+│       └── 📄 merge-icon.svg
+```
+---
 
-| Commande | Description |
-|----------|-------------|
-| `git init` | Crée un dépôt Git vide dans le dossier actuel (pour commencer à versionner un projet). |
-| `git clone [url]` | Récupère un projet depuis un dépôt en ligne (GitHub, GitLab...) et le copie sur votre machine. |
-| `git config --global user.name "TonNom"` | Définit ton nom d'auteur pour tous les projets. |
-| `git config --global user.email "email@example.com"` | Idem pour l'adresse email associée aux commits. |
+<p align="center">
+  <a href="GuideGit/demarrer-Git.md">Suivant</a>
+</p>
 
-## 2. Suivre les changements
 
-| Commande | Description |
-|----------|-------------|
-| `git status` | Affiche les fichiers modifiés, ajoutés ou supprimés. |
-| `git add [fichier]` | Prépare un fichier pour le commit (le place dans la "staging area"). |
-| `git add .` | Ajoute tous les fichiers modifiés à la staging area. |
-| `git commit -m "Message"` | Enregistre officiellement les modifications avec un message descriptif. |
-| `git commit --amend` | Modifie le dernier commit (pour corriger un oubli ou un message). |
+
 
 ## 3. Travailler avec des branches
 
