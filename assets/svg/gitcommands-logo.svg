@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200">
+  <style>
+    .title { font: bold 48px sans-serif; fill: #2a2a2a; }
+    .subtitle { font: 24px sans-serif; fill: #666; }
+    .git-icon { fill: #f34f29; }
+  </style>
+  
+  <!-- Git Logo -->
+  <g transform="translate(50,60)">
+    <path class="git-icon" d="M74.4,32.6L41.4,0C39.8-1.6,37-1.6,35.4,0L28,7.6l9.4,9.4c2.2-0.8,4.8-0.2,6.6,1.6c1.8,1.8,2.4,4.4,1.6,6.6l9,9c2.2-0.8,4.8-0.2,6.6,1.6c2.6,2.6,2.6,6.8,0,9.4c-2.6,2.6-6.8,2.6-9.4,0c-1.8-1.8-2.4-4.4-1.6-6.6l-8.4-8.4v22.2c0.6,0.4,1.2,0.8,1.8,1.4c2.6,2.6,2.6,6.8,0,9.4c-2.6,2.6-6.8,2.6-9.4,0c-2.6-2.6-2.6-6.8,0-9.4c0.6-0.6,1.4-1.2,2.2-1.4V30.2c-0.8-0.2-1.6-0.8-2.2-1.4c-1.8-1.8-2.4-4.4-1.6-6.6l-9.2-9.2L0,32.6c-1.6,1.6-1.6,4.2,0,5.8l33,33c1.6,1.6,4.2,1.6,5.8,0l35.6-35.6C76,36.8,76,34.2,74.4,32.6z"/>
+  </g>
+  
+  <!-- Text -->
+  <text class="title" x="160" y="80">30 Git Commands</text>
+  <text class="subtitle" x="160" y="120">Essential Commands for Better Code Management</text>
+</svg>

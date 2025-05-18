@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2a2a2a; }
+    .command { font: bold 16px monospace; fill: #f34f29; }
+    .description { font: 14px sans-serif; fill: #666; }
+    .icon { fill: #2a2a2a; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; }
+    .box { fill: #f0f0f0; stroke: #ddd; stroke-width: 2; rx: 8; }
+    .user-info { font: italic 12px sans-serif; fill: #888; }
+  </style>
+
+  <!-- Titre -->
+  <text class="title" x="50" y="40">Démarrer avec Git</text>
+  
+  <!-- User Info -->
+  <text class="user-info" x="50" y="380">Created by @fannysaez - 2025-05-18 04:49:32 UTC</text>
+
+  <!-- git init -->
+  <g transform="translate(50,80)">
+    <rect class="box" width="300" height="70"/>
+    <text class="command" x="20" y="30">git init</text>
+    <text class="description" x="20" y="50">Crée un dépôt Git vide</text>
+    <!-- Folder icon -->
+    <path class="icon" transform="translate(250,20)" d="M0,0 h16 v12 h-16 z M0,0 h8 l2,-3 h6 v3"/>
+  </g>
+
+  <!-- git clone -->
+  <g transform="translate(450,80)">
+    <rect class="box" width="300" height="70"/>
+    <text class="command" x="20" y="30">git clone [url]</text>
+    <text class="description" x="20" y="50">Récupère un projet distant</text>
+    <!-- Cloud download icon -->
+    <path class="icon" transform="translate(250,20)" d="M0,8 a8,8 0 1,1 16,0 l-8,8 l-8,-8"/>
+  </g>
+
+  <!-- git config -->
+  <g transform="translate(50,180)">
+    <rect class="box" width="700" height="120"/>
+    <text class="command" x="20" y="30">git config --global</text>
+    <text class="description" x="20" y="50">user.name "TonNom"</text>
+    <text class="description" x="20" y="70">user.email "email@example.com"</text>
+    <!-- User icon -->
+    <g transform="translate(600,30)">
+      <circle class="icon" cx="10" cy="8" r="8"/>
+      <circle class="icon" cx="10" cy="28" r="12"/>
+    </g>
+  </g>
+
+  <!-- Flèches de connexion -->
+  <path class="arrow" d="M200,150 L200,180"/>
+  <path class="arrow" d="M600,150 L600,180"/>
+
+  <!-- Workflow diagram -->
+  <g transform="translate(50,320)">
+    <path class="arrow" d="M0,0 L700,0" marker-end="url(#arrowhead)"/>
+    <!-- Arrow marker definition -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+      </marker>
+    </defs>
+  </g>
+</svg>
