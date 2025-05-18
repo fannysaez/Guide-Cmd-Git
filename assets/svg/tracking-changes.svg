@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2a2a2a; }
+    .command { font: bold 16px monospace; fill: #f34f29; }
+    .description { font: 14px sans-serif; fill: #666; }
+    .area-title { font: bold 18px sans-serif; fill: #2a2a2a; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .area { fill: #f0f0f0; stroke: #ddd; stroke-width: 2; rx: 10; }
+    .file { fill: #fff; stroke: #666; stroke-width: 1; }
+    .file-text { font: 12px monospace; fill: #444; }
+    .status-dot { fill: #28a745; }
+    .status-dot.modified { fill: #f1c40f; }
+    .status-dot.staged { fill: #3498db; }
+    .commit-circle { fill: #f34f29; stroke: #c0392b; stroke-width: 2; }
+    .user-info { font: italic 12px sans-serif; fill: #888; }
+  </style>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Titre -->
+  <text class="title" x="50" y="40">Suivre les changements</text>
+
+  <!-- Working Directory -->
+  <g transform="translate(50,80)">
+    <rect class="area" width="200" height="280"/>
+    <text class="area-title" x="20" y="30">Working Directory</text>
+    <text class="command" x="20" y="60">git status</text>
+    
+    <!-- Files -->
+    <g transform="translate(20,80)">
+      <rect class="file" width="160" height="20"/>
+      <circle class="status-dot modified" cx="150" cy="10" r="5"/>
+      <text class="file-text" x="5" y="15">index.html</text>
+    </g>
+    <g transform="translate(20,110)">
+      <rect class="file" width="160" height="20"/>
+      <circle class="status-dot modified" cx="150" cy="10" r="5"/>
+      <text class="file-text" x="5" y="15">style.css</text>
+    </g>
+  </g>
+
+  <!-- Staging Area -->
+  <g transform="translate(300,80)">
+    <rect class="area" width="200" height="280"/>
+    <text class="area-title" x="20" y="30">Staging Area</text>
+    <text class="command" x="20" y="60">git add</text>
+    
+    <!-- Staged Files -->
+    <g transform="translate(20,80)">
+      <rect class="file" width="160" height="20"/>
+      <circle class="status-dot staged" cx="150" cy="10" r="5"/>
+      <text class="file-text" x="5" y="15">index.html</text>
+    </g>
+  </g>
+
+  <!-- Local Repository -->
+  <g transform="translate(550,80)">
+    <rect class="area" width="200" height="280"/>
+    <text class="area-title" x="20" y="30">Local Repository</text>
+    <text class="command" x="20" y="60">git commit</text>
+    
+    <!-- Commit representation -->
+    <g transform="translate(100,140)">
+      <circle class="commit-circle" r="30"/>
+      <text class="description" x="-25" y="45">Last Commit</text>
+    </g>
+  </g>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M260,220 L290,220"/>
+  <path class="arrow" d="M510,220 L540,220"/>
+
+  <!-- Commands description -->
+  <g transform="translate(50,400)">
+    <text class="command" x="0" y="0">git add [fichier]</text>
+    <text class="description" x="0" y="20">→ Ajoute un fichier spécifique</text>
+    
+    <text class="command" x="250" y="0">git add .</text>
+    <text class="description" x="250" y="20">→ Ajoute tous les fichiers</text>
+    
+    <text class="command" x="500" y="0">git commit --amend</text>
+    <text class="description" x="500" y="20">→ Modifie le dernier commit</text>
+  </g>
+
+  <!-- User Info -->
+  <text class="user-info" x="50" y="480">Created by @fannysaez - 2025-05-18 05:25:33 UTC</text>
+</svg>
