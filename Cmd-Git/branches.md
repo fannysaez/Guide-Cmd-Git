@@ -16,6 +16,16 @@
   <img src="../assets/svg/working-with-branches.svg" alt="Travailler avec les branches Git" width="900">
 </div>
 
+<div align="center">
+  <h3>Branche Git</h3>  
+  <img src="../assets/svg/branch-icon.svg" alt="branche Git" width="80">
+</div>
+
+<div align="center">
+  <h3>Merge Git</h3>  
+  <img src="../assets/svg/merge-icon.svg" alt="merge Git" width="80">
+</div>
+
 ---
 
 <p align="center">
