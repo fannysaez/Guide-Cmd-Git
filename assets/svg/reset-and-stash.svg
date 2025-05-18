@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2a2a2a; }
+    .command { font: bold 16px monospace; fill: #f34f29; }
+    .description { font: 14px sans-serif; fill: #666; }
+    .box { fill: #f0f0f0; stroke: #ddd; stroke-width: 2; rx: 10; }
+    .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .arrow-reset { stroke: #d73a49; stroke-width: 2; fill: none; marker-end: url(#arrowhead-red); }
+    .arrow-stash { stroke: #6f42c1; stroke-width: 2; fill: none; marker-end: url(#arrowhead-purple); }
+    .commit { fill: #f34f29; stroke: #c0392b; stroke-width: 2; }
+    .stash-box { fill: #e6e1f0; stroke: #6f42c1; stroke-width: 2; rx: 5; }
+    .file { fill: white; stroke: #666; stroke-width: 1; }
+    .user-info { font: italic 12px sans-serif; fill: #888; }
+  </style>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d73a49"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6f42c1"/>
+    </marker>
+  </defs>
+
+  <!-- Titre -->
+  <text class="title" x="50" y="40">Annuler, restaurer ou mettre de côté</text>
+
+  <!-- Git Reset Section -->
+  <g transform="translate(50,80)">
+    <text class="command" x="0" y="20">git reset</text>
+    
+    <!-- Staging Area -->
+    <rect class="box" x="0" y="40" width="300" height="150"/>
+    <text class="title" x="20" y="70">Staging Area</text>
+    
+    <!-- Files -->
+    <g transform="translate(20,90)">
+      <rect class="file" width="260" height="25"/>
+      <text class="description" x="10" y="18">index.html</text>
+      <path class="arrow-reset" d="M280,12 L320,12"/>
+    </g>
+    <g transform="translate(20,125)">
+      <rect class="file" width="260" height="25"/>
+      <text class="description" x="10" y="18">style.css</text>
+    </g>
+  </g>
+
+  <!-- Git Reset Hard Section -->
+  <g transform="translate(450,80)">
+    <text class="command" x="0" y="20">git reset --hard [commit]</text>
+    
+    <!-- Commit Timeline -->
+    <g transform="translate(20,50)">
+      <line x1="0" y1="40" x2="300" y2="40" class="arrow"/>
+      
+      <!-- Commits -->
+      <circle class="commit" cx="50" cy="40" r="10"/>
+      <circle class="commit" cx="150" cy="40" r="10"/>
+      <circle class="commit" cx="250" cy="40" r="10"/>
+      
+      <!-- Reset Arrow -->
+      <path class="arrow-reset" d="M250,40 C270,40 270,80 250,80 L50,80"/>
+      <text class="description" x="100" y="100">Retour à un commit précédent</text>
+    </g>
+  </g>
+
+  <!-- Git Stash Section -->
+  <g transform="translate(50,300)">
+    <text class="command" x="0" y="20">git stash / git stash pop</text>
+    
+    <!-- Working Directory -->
+    <rect class="box" x="0" y="40" width="300" height="150"/>
+    <text class="title" x="20" y="70">Working Directory</text>
+    
+    <!-- Modified Files -->
+    <g transform="translate(20,90)">
+      <rect class="file" width="260" height="25"/>
+      <text class="description" x="10" y="18">feature.js (modified)</text>
+    </g>
+    
+    <!-- Stash Box -->
+    <g transform="translate(400,40)">
+      <rect class="stash-box" width="300" height="150"/>
+      <text class="title" x="20" y="30">Stash</text>
+      <text class="description" x="20" y="60">Modifications temporaires</text>
+      
+      <!-- Stash Arrows -->
+      <path class="arrow-stash" d="M-80,70 C-40,70 -40,70 0,70"/>
+      <text class="command" x="-60" y="60">stash</text>
+      
+      <path class="arrow-stash" d="M0,100 C-40,100 -40,100 -80,100"/>
+      <text class="command" x="-60" y="120">stash pop</text>
+    </g>
+  </g>
+
+  <!-- User Info -->
+  <text class="user-info" x="50" y="580">Created by @fannysaez - 2025-05-18 06:07:18 UTC</text>
+</svg>
