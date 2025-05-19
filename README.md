@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/icons/svg" alt="Figma Logo" width="200"/>
+  <img src="./assets/svg/git-logo.svg" alt="Figma Logo" width="200"/>
   
   # Guide 30 commandes Git Utiles
   *Un guide détaillé pour maîtriser Git de zéro*
