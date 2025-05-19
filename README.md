@@ -10,14 +10,9 @@
 
 </div>
 
----
-
-
-
 > Quand on commence à utiliser Git, on se limite souvent à git add, git commit, et git push...
 > Mais Git propose bien plus pour suivre, tester, corriger ou organiser son travail au quotidien.
 
----
 
 Voici une sélection de 30 commandes que je trouve pratiques :
 <div align="center">
