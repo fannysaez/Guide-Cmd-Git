@@ -1,16 +1,28 @@
-
-# 30 commandes Git utiles à connaître pour mieux gérer ton code
-
 <div align="center">
-  <img src="./assets/svg/git-commands-logo.svg" alt="Git 30 commandes utiles" width="500">
+  <img src="./assets/icons/svg" alt="Figma Logo" width="200"/>
+  
+  # Guide 30 commandes Git Utiles
+  *Un guide détaillé pour maîtriser Git de zéro*
+
+[![Git](https://img.shields.io/badge/Git-2.0+-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Version Control](https://img.shields.io/badge/Version_Control-DVCS-FF8C00?style=for-the-badge)](https://git-scm.com/)
+[![Branching](https://img.shields.io/badge/Branching-Workflow-4CAF50?style=for-the-badge)](https://git-scm.com/)
+
 </div>
 
 ---
 
+
+
 > Quand on commence à utiliser Git, on se limite souvent à git add, git commit, et git push...
 > Mais Git propose bien plus pour suivre, tester, corriger ou organiser son travail au quotidien.
 
+---
+
 Voici une sélection de 30 commandes que je trouve pratiques :
+<div align="center">
+  <img src="./assets/svg/git-commands-logo.svg" alt="Git 30 commandes utiles" width="500">
+</div>
 
 ## 📋 Table des matières
 
