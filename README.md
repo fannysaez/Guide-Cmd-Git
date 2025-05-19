@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/svg/git-logo.svg" alt="Figma Logo" width="200"/>
   
-  # Guide 30 commandes Git Utiles
+  # 30 commandes Git Utiles
   *Un guide détaillé pour maîtriser Git de zéro*
 
 [![Git](https://img.shields.io/badge/Git-2.0+-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
